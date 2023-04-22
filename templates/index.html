@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget App</title>
+  <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/budget">Budget</a></li>
+        <li><a href="/goals">Goals</a></li>
+        <li><a href="/settings">Settings</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to Budget App</h1>
+  </header>
+
+  <section id="account-summary">
+    <h2>Account Summary</h2>
+    <p>Displays current account balances from connected bank account</p>
+    <table>
+      <tr>
+        <th>Account</th>
+        <th>Balance</th>
+      </tr>
+      <tr>
+        <td>Checking</td>
+        <td>$1,234.56</td>
+      </tr>
+      <tr>
+        <td>Savings</td>
+        <td>$5,678.90</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="spending">
+    <h2>Spending</h2>
+    <p>Displays current spending from connected bank account</p>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Groceries</td>
+        <td>$200.00</td>
+      </tr>
+      <tr>
+        <td>Entertainment</td>
+        <td>$150.00</td>
+      </tr>
+    </table>
+  </section>
+  <section id="budget">
+    <h2>Budget</h2>
+    <p>Displays budget information and allows for editing</p>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Budgeted</th>
+        <th>Spent</th>
+        <th>Remaining</th>
+      </tr>
+      <tr>
+        <td>Groceries</td>
+        <td>$300.00</td>
+        <td>$200.00</td>
+        <td>$100.00</td>
+      </tr>
+      <tr>
+        <td>Entertainment</td>
+        <td>$100.00</td>
+        <td>$150.00</td>
+        <td>-$50.00</td>
+      </tr>
+    </table>
+  </section>
+  <section id="goals">
+    <h2>Goals</h2>
+    <p>Displays money goals and allows for editing</p>
+    <table>
+      <tr>
+        <th>Goal</th>
+        <th>Target Amount</th>
