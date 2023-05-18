@@ -22,18 +22,20 @@
     <h2>Account Summary</h2>
     <p>Displays current account balances from connected bank account</p>
     <table>
-      <tr>
-        <th>Account</th>
-        <th>Balance</th>
-      </tr>
-      <tr>
-        <td>Checking</td>
-        <td>$1,234.56</td>
-      </tr>
-      <tr>
-        <td>Savings</td>
-        <td>$5,678.90</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Account Name</th>
+          <th>Account Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for account_name, account_total in account_info.items() %}
+        <tr>
+          <td>{{ account_name }}</td>
+          <td>{{ account_total }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </section>
 
